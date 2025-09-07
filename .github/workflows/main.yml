@@ -62,10 +62,3 @@ jobs:
       # Build App Bundle (AAB)
       - name: Build App Bundle (Release)
         run: flutter build appbundle --release
-
-      # Upload AAB artifact
-      - name: Upload AAB
-        uses: actions/upload-artifact@v4
-        with:
-          name: app-release-aab
-          path: build/app/outputs/bundle/release/app-release.aab
